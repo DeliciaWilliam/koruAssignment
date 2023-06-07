@@ -1,0 +1,62 @@
+<div class="display wrapper">
+  <div id="one" class="box1" style=" background-color: #f6ded3;">
+    <div style="margin-top: 20%; margin-left: 10%; display: block; width: 70%;">
+      <p style="font-size: 50px; letter-spacing: 2px; line-height: 1.5;"> <b>Digital</b> Platform <br> for distance
+        <b>learning</b> </p>
+      <p style="color: #565454; font-size: 14px; letter-spacing: 1px; padding-top: 5px;">Internet and online based
+        digital technologies such as desktop computers, mobile phones and others</p>
+    </div>
+    <!-- <div style="font-size: 20px;"></div> -->
+  </div>
+  <div id="two" class="box2">
+    <div class="form-side" >
+      <div class="your-logo">your <span style="color: #e4301b;">logo</span> 
+        <img class="trade-img" src="/assets/images/trademark.png"> 
+      </div>
+      <div class="welcome-div">
+        <div>
+          <mat-icon class="lock-icon">lock_outline</mat-icon>
+        </div>
+        <div class="text-center" style="margin-top: 15px;">
+          <h4 style="font-weight: 600; font-size: 20px; letter-spacing: 1px;">Welcome Back</h4>
+        </div>
+      </div>
+      
+      <div>
+      <form class="text-left" [formGroup]="loginForm" (ngSubmit)="getFormDetails()">
+        <div class="form">
+          <div>
+            <mat-form-field appearance="outline" class="form-field">
+              <mat-icon matPrefix class="icon-user">people</mat-icon>
+              <input matInput class="inputbox" formControlName="username" placeholder="Username" name="name"
+                type="text">
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" class="form-field">
+              <mat-icon matPrefix class="icon-user">lock</mat-icon>
+              <input matInput class="inputbox" formControlName="password" placeholder="Password" name="number"
+                type="password">
+                <mat-error *ngIf="loginForm?.get('password')?.errors" style="font-size: 12px; ">
+                  <mat-icon>warning</mat-icon>
+                  Please enter atleast 8 character with number, symbol, capital and small letter</mat-error>
+            </mat-form-field>
+          </div>
+          <div style="margin-top: 30px; text-align: end;">
+            <a class="forgot-pass">Forgot Password?</a>
+         </div>
+          <div>
+              <button mat-stroked-button class="login-btn" type="submit" [disabled]="!loginForm.valid">Login</button>
+          </div>
+          <div style="margin-top: 25px; text-align: center;">
+            <span class="sign-up">Don't have an account? <b> Sign Up </b> </span>
+          </div>
+
+        </div>
+      </form>
+    </div>
+    </div>
+
+  </div>
+
+</div>

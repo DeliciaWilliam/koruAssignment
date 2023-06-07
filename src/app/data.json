@@ -1,0 +1,110 @@
+[
+	{
+		"username": "Diane John",
+		"phoneNum": "9632587410",
+        "email": "dianejohn@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Deric Daniel",
+		"phoneNum": "9685741230",
+        "email": "dericdani@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Denis Selva",
+		"phoneNum": "9685732145",
+        "email": "denisselv@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "William James",
+		"phoneNum": "9023146780",
+        "email": "williamjames@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Stella Mary",
+		"phoneNum": "9584763210",
+        "email": "stellamary@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Russel John",
+		"phoneNum": "9392914567",
+        "email": "russeljohn@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Vincent Paul",
+		"phoneNum": "9784653012",
+        "email": "vincentpaul@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Onkar Dalvi",
+		"phoneNum": "9630258741",
+        "email": "onkardal@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Yogita Kam",
+		"phoneNum": "9456781032",
+        "email": "yogitakam@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Akshta Pawar",
+		"phoneNum": "9063984501",
+        "email": "akshupawar@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Nilam Rai",
+		"phoneNum": "9012378945",
+        "email": "nilamrai@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Joel Steve",
+		"phoneNum": "9012378654",
+        "email": "joelsteve@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Joseph Johen",
+		"phoneNum": "984560123",
+        "email": "josephjohen@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Jay Joseph",
+		"phoneNum": "9638527012",
+        "email": "jayjose@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Mark Kumar",
+		"phoneNum": "9745680123",
+        "email": "markkumar@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Marion Risha",
+		"phoneNum": "9630124578",
+        "email": "marionrisha@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Catherine Paul",
+		"phoneNum": "9213045678",
+        "email": "catherine@gmail.com",
+        "isDelete": false
+	},
+	{
+		"username": "Anish Antony",
+		"phoneNum": "9012378465",
+        "email": "anishanto@gmail.com",
+        "isDelete": false
+	}
+]
