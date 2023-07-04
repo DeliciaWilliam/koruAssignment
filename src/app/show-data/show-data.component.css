@@ -38,6 +38,10 @@ table, td, th {
     min-height: 30px;
     transition: transform 100ms cubic-bezier(0, 0, 0.2, 1);
   }
+  
+  .table-div table .trow{
+    min-width: 150px;
+  }
 
   .delete-btn {
     width: 75px;
@@ -46,4 +50,28 @@ table, td, th {
     border: none;
     border-radius: 5px;
     color: #ffffff;
+  }
+ 
+  .selected:hover {
+    background-color: #fdc3c0;
+  }
+
+  .delete {
+    border: none;
+    background-color: inherit;
+  }
+
+  .deleteButton {
+    height: 15px;
+    width: 15px;
+    border-radius: 4px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .table-div{
+      overflow-x: scroll;
+    }
+    .modal {
+      padding-top: 71%;
+    }
   }

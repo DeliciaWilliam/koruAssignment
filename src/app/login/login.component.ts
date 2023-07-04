@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
   getFormDetails() {
     // console.log(this.loginForm.value)
     // this.toastr.success('Success','Login Successfully',this.toastrConfig)
-    this.toastr.error('everything is broken', 'Major Error', {
+    this.toastr.success('Login Successfully', 'Success', {
       timeOut: 3000,
     });
     this.router.navigate(['showData']);

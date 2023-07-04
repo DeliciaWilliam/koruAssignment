@@ -1,146 +1,188 @@
 .example-form {
-    width: 50%;
-    height: 50%;
-    margin: auto;
-    padding: 100px;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  padding: 100px;
 }
 
-.wrapper { 
-    /* border : 2px solid #000;  */
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    overflow:hidden;
-  }
-  
-  .wrapper > div {
-    height: 100%;
-    width: 50%;
-     /* min-height: 200px; */
-     /* padding: 10px; */
-  }
-  .box1 {
+.wrapper {
 
-    order: 1;
-  }
-  .box2 {
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
 
-    order: 2;
-  }
-  #one {
-    background-color: gray;
-    float:right; 
-    /* margin-right:20px; */
-    /* width:50%; */
-    /* border-right:2px solid #000; */
-  }
-  #two { 
-    float:left; 
-    background-color: white;
-    /* overflow:hidden; */
-    /* margin:10px; */
-    /* border:2px dashed #ccc; */
-    /* min-height:170px; */
+}
+
+/* .wrapper > div { */
+/* height: 100%; */
+
+/* } */
+.box1 {
+  width: 60%;
+  background-color: #fef1f1;
+  order: 1;
+}
+
+.box1 .inner-box {
+  padding: 12rem 5rem;
+}
+
+.box1 .inner-box h1 {
+  font-size: 60px;
+  line-height: 85px;
+  font-weight: 300;
+}
+
+.box1 .inner-box h1 .bold-text {
+  font-weight: 700;
+}
+
+.box1 .inner-box p {
+  font-size: 17px;
+  line-height: 25px;
+  max-width: 550px;
+  color: #585858;
+}
+
+.box2 {
+  width: 40%;
+  order: 2;
+}
+
+#two {
+  float: left;
+  background-color: white;
+}
+
+.welcome-div {
+  margin-top: 75px;
+}
+
+.icon-user {
+  width: 25px;
+  height: 16px;
+  position: relative;
+  opacity: 0.8;
+  color: #626262;
+}
+
+.login-btn {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #e4301b;
+  color: #ffffff;
+}
+
+.mat-stroked-button.mat-button-disabled.mat-button-disabled {
+  color: #fff;
+}
+
+.form-side {
+  width: 50%;
+
+  margin: 15% auto;
+}
+
+.your-logo {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  color: #585858;
+}
+
+.trade-img {
+  height: 12px;
+  vertical-align: top;
+}
+
+.lock-icon {
+  height: 50px;
+  width: 50px;
+  background-color: #f6ded3;
+  color: #e4301b;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.forgot-pass {
+  font-size: 12px;
+  cursor: pointer;
+  color: #939191;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-subscript-wrapper {
+  position: relative !important;
+}
+
+.ng-valid .mat-form-field-outline {
+  opacity: 1;
+  color: green;
+}
+
+.login-btn {
+  color: #fff;
+}
+
+.sign-up {
+  font-size: 14px;
+  color: #939191;
+}
+
+.toast-top-right {
+  bottom: 20px !important;
+  right: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .box1 .inner-box {
+    padding: 3rem 1.5rem;
+    /* width: 100%; */
   }
 
-  .welcome-div {
-    margin-top: 75px;
+  .box1 .inner-box h1 {
+    font-size: 25px;
+    line-height: 40px;
+
   }
 
-  .icon-user
-  {
-    width: 25px;
-    height: 16px;
-    position: relative;
-    opacity: 0.8;
-    color: #626262;
-  }
-  
-  .login-btn {
-    margin-top: 30px;
-    width: 100%;
-    background-color: #e4301b;
-    color: #ffffff;
+  .box1 .inner-box p {
+    font-size: 13px;
+    line-height: 23px;
+    max-width: 276px;
   }
 
   .form-side {
-    width: 50%;
-    height: 100%;
+    width: 80%;
+
     margin: 15% auto;
-    /* display: grid; */
   }
 
-  /* .form-side > div {
-    margin-top: 30px;
-  } */
+  .welcome-div {
+    margin-top: 15px;
+  }
+
+  #one {
+    float: none;
+    width: 100%;
+  }
+
+  #two {
+    float: none;
+    width: 100%;
+  }
+
   .your-logo {
-    font-size: 35px;
-    font-weight: 900;
-    text-align: center;
+    margin-bottom: 2rem;
   }
 
-  .trade-img {
-    height: 12px;
-    vertical-align: top;
+  .box1 {
+    order: 2;
   }
 
-  .lock-icon {
-    height: 50px;
-    width: 50px;
-    background-color: #f6ded3;
-    color: #e4301b;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+  .box2 {
+    order: 1;
   }
-
-  .forgot-pass {
-    font-size: 12px;
-    cursor: pointer;
-    color: #939191;
-  }
-
-  .sign-up {
-    font-size: 14px;
-    color: #939191;
-  }
-  @media screen and (max-width: 600px) {
-    .wrapper > div {
-      height: 50%;
-      width: 80%;
-       /* min-height: 200px; */
-       /* padding: 10px; */
-    }
-    .form-side {
-      width: 80%;
-      height: 50%;
-      margin: 15% auto;
-      /* display: grid; */
-    }
-    .welcome-div {
-      margin-top: 15px;
-    }
-     #one { 
-      float: none;
-      /* margin-right:0; */
-      width:auto;
-     /*  border:0;
-      border-bottom:2px solid #000;     */
-    }
-    #two { 
-      float: none;
-      /* margin-right:0; */
-      width:auto;
-       /*border:0;
-      border-bottom:2px solid #000;     */
-    }
-    .box1 {
-      order: 2;
-    }
-    .box2 {
-      order: 1;
-    }
-  }
-
+}

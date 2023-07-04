@@ -1,0 +1,15 @@
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="div-1">
+            <img class="trade-img" src="/assets/images/restriction.png">
+        </div>
+        <div class="div-2">
+            <p><strong> Are you sure want to delete?</strong></p>
+            <div class="btn-div">
+                <button class="red" (click)="dialogRef.close()">Cancel</button>
+                <button (click)="deleteRow()" class="green">yes</button>
+
+            </div>
+        </div>
+    </div>
+</div>

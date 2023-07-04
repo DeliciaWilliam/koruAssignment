@@ -11,43 +11,67 @@
             <h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
         </div>
         <div style="width: 50%; display: flex; justify-content: end;">
-            <button class="delete-btn" (click)="deleteRow()">Delete</button>
+            <button class="delete-btn" (click)="confirmation()">Delete</button>
         </div>
-        
+
+    </div>
+    <div class="table-div">
+        <table class="data-table" id="tableID">
+            <thead>
+                <tr>
+                    <th>
+
+                    </th>
+                    <th scope="col">
+                        User Name
+                    </th>
+                    <th scope="col">
+                        Phone Number
+                    </th>
+                    <th scope="col">
+                        Email ID
+                    </th>
+                    <th style="text-align: end;"> <i>Options </i></th>
+                </tr>
+            </thead>
+            <tbody cdkDropList (cdkDropListDropped)="drop($event)">
+                <tr class="selected" cdkDrag cdkDragLockAxis="y" *ngFor="let data of userdata; let i = index"
+                    [attr.id]="'id'+i">
+                    <td><input type="checkbox" class="select"></td>
+                    <td class="trow" cdkDragHandle>{{data.username}}</td>
+                    <td class="trow">{{data.phoneNum}}</td>
+                    <td class="trow">{{data.email}}</td>
+                    <td class="trow">
+                        <span style="margin: 0px 2px;">
+                            <button class="delete" (click)="deleteCurRow(i)">
+                                <img class="deleteButton" src="assets/images/Delete.png" />
+                            </button>
+                        </span>
+                    </td>
+
+                    <div *cdkDragPreview matchSize="true" class="container dragdrop-placeholder">
+                        {{data.username}}
+                    </div>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <table  id="tableID" >
-        <thead>
-            <tr>
-                <th>
-                    
-                </th>
-                <th scope="col">
-                    User Name
-                </th>
-                <th scope="col">
-                    Phone Number
-                </th>
-                <th scope="col">
-                    Email ID
-                </th>
-                <th style="text-align: end;"> <i>Options </i></th>
-            </tr>
-        </thead>
-        <tbody cdkDropList (cdkDropListDropped)="drop($event)">
-            <tr cdkDrag cdkDragLockAxis="y" *ngFor="let data of userdata; let i = index" [attr.id]="'id'+i">
-                <td><input type="checkbox" class="select"></td>
-                <td cdkDragHandle>{{data.username}}</td>
-                <td>{{data.phoneNum}}</td>
-                <td>{{data.email}}</td>
-                <td></td>
+    <!-- <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="div-1">
+                <img class="trade-img" src="/assets/images/restriction.png">
+            </div>
+            <div class="div-2">
+                <p><strong> Are you sure want to delete?</strong></p>
+                <div class="btn-div">
+                    <button class="red">Cancel</button>
+                    <button (click)="deleteRow()" class="green">yes</button>
 
-
-                <div *cdkDragPreview matchSize="true" class="container dragdrop-placeholder">
-                    {{data.username}}
                 </div>
-            </tr>
-        </tbody>
-    </table> 
-    
+            </div>
+        </div>
+
+    </div> -->
+
 </div>

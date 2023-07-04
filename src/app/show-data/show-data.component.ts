@@ -1,7 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import logindata from '../data.json';
 import { CdkDragDrop, moveItemInArray } from "@angular/cdk/drag-drop";
+import { MatDialog } from '@angular/material/dialog';
 import { ToastrService } from 'ngx-toastr';
+import { ConfirmComponent } from '../confirm/confirm.component';
 declare  var $: any;
 export interface userData {
   username:String;
@@ -18,10 +20,10 @@ export class ShowDataComponent implements OnInit {
   userdata : userData[] = logindata
   toastrConfig = { positionClass: "toast-bottom-right", closeButton: true, }
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
-    
+
   }
 
 
@@ -30,17 +32,14 @@ export class ShowDataComponent implements OnInit {
   }
 
   confirmation () {
-
+    let dialog = this.dialog.open(ConfirmComponent, {
+      disableClose: true
+    });
   }
 
-  deleteRow() {
 
-    document.querySelectorAll('#tableID .select:checked').forEach(e => {
-      // console.log("--------",e.parentNode?.parentNode)
-      let item: any
-      item = e.parentNode?.parentNode
-      item.remove()
-    });
+  deleteCurRow(index: any) {
+    this.userdata.splice(index,1);
   }
   
 }

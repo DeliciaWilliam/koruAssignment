@@ -15,17 +15,21 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatTableModule } from '@angular/material/table';
 import { ToastrModule ,ToastrService} from 'ngx-toastr';
-// import { MatTableExporterModule } from 'mat-table-exporter';
+import { MatDialogModule, MatDialogRef} from '@angular/material/dialog';
+import { ConfirmComponent } from './confirm/confirm.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ShowDataComponent
+    ShowDataComponent,
+    ConfirmComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatDialogModule,
+    // MatDialogRef,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
@@ -40,6 +44,7 @@ import { ToastrModule ,ToastrService} from 'ngx-toastr';
     // MatTableExporterModule,
   ],
   providers: [ToastrService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ConfirmComponent]
 })
 export class AppModule { }
